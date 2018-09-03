@@ -1,0 +1,13 @@
+[windows]
+172.20.152.68
+
+[windows:vars]
+ansible_connection=winrm
+ansible_user=Administrator
+ansible_password=@rdN1$erver
+ansible_port=5986
+ansible_ssh_port=5986
+ansible_ssh_user=Administrator
+ansible_ssh_pass=@rdN1$erver
+ansible_connection=winrm
+ansible_winrm_server_cert_validation=ignore
