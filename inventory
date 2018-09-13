@@ -4,7 +4,7 @@
 [windows:vars]
 ansible_connection=winrm
 ansible_user=Administrator
-ansible_password=@rdN1$erver
+#ansible_password=teste
 ansible_port=5986
 ansible_ssh_port=5986
 ansible_ssh_user=Administrator
