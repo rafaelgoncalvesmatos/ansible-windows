@@ -5,13 +5,13 @@
     name: 
       - Web-Server
       - Web-Common-Http
-  include_sub_features: True
-  include_management_tools: True
-  state: present
+    include_sub_features: True
+    include_management_tools: True
+    state: present
 
 - name: Install Net.Framework
   win_feature:
     name: NET-Framework-Core
     source: C:\Temp\iso\sources\sxs
-  state: present
+    state: present
 

@@ -5,6 +5,6 @@
 ansible_connection=winrm
 ansible_user="{{ lookup('env','DOMAIN_USER') }}"
 ansible_password="{{ lookup('env','DOMAIN_PASS') }}"
-ansible_port=55985
+ansible_port=5985
 ansible_winrm_transport=ntlm
 ansible_winrm_server_cert_validation=ignore
