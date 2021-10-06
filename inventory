@@ -1,13 +1,10 @@
 [windows]
-172.20.152.68
+192.168.56.252
 
 [windows:vars]
 ansible_connection=winrm
-ansible_user=Administrator
-#ansible_password=teste
-ansible_port=5986
-ansible_ssh_port=5986
-ansible_ssh_user=Administrator
-ansible_ssh_pass=@rdN1$erver
-ansible_connection=winrm
+ansible_user="{{ lookup('env','DOMAIN_USER') }}"
+ansible_password="{{ lookup('env','DOMAIN_PASS') }}"
+ansible_port=55985
+ansible_winrm_transport=ntlm
 ansible_winrm_server_cert_validation=ignore
